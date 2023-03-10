@@ -7,7 +7,7 @@ syn scan to detect living port
 usage :
 
 ```shell
-./qwai_scanner -i HOST -m MASK
+sudo ./qwai_scanner -i HOST -m MASK
 ```
 
 
