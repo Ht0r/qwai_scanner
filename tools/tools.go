@@ -3,7 +3,6 @@ package tools
 import (
 	"bytes"
 	"encoding/binary"
-	"fmt"
 	"net"
 	"strconv"
 	"strings"
@@ -17,8 +16,8 @@ func Get_self(raddr string) string {
 	if err != nil {
 		panic(err)
 	}
-	inface, gw, src, err := router.Route(ip)
-	fmt.Println(inface.Name, gw, src)
+	_, _, src, err := router.Route(ip)
+	// fmt.Println(inface.Name, gw, src)
 	if err != nil {
 		panic(err)
 	}
